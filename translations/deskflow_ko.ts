@@ -271,6 +271,17 @@ Do you want to connect to the server?
     </message>
 </context>
 <context>
+    <name>HelpDialog</name>
+    <message>
+        <source>%1 Help</source>
+        <translation type="unfinished">%1 도움말</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished">닫다</translation>
+    </message>
+</context>
+<context>
     <name>HotkeyDialog</name>
     <message>
         <source>Hotkey</source>
@@ -422,6 +433,10 @@ Do you want to connect to the server?
         <translation>&lt;p&gt;서버 &apos;%1&apos;에 연결하지 못했습니다.&lt;/p&gt;&lt;p&gt;같은 이름의 클라이언트가 이미 서버에 연결되어 있습니다.&lt;/p&gt;&lt;p&gt;고유한 이름을 사용하고, 클라이언트 프로세스가 하나만 실행 중인지 확인하세요.&lt;/p&gt;</translation>
     </message>
     <message>
+        <source>View &amp;Help</source>
+        <translation type="unfinished">도움말 보기(&amp;H)</translation>
+    </message>
+    <message>
         <source>No IP Detected</source>
         <translation>IP를 감지하지 못했습니다</translation>
     </message>
@@ -466,14 +481,6 @@ A bound IP is now invalid, you may need to restart the server.</source>
     <message>
         <source>&amp;Help</source>
         <translation>도움말(&amp;H)</translation>
-    </message>
-    <message>
-        <source>Clear settings</source>
-        <translation>설정 초기화</translation>
-    </message>
-    <message>
-        <source>Report a Bug</source>
-        <translation>버그 신고</translation>
     </message>
     <message>
         <source>&amp;Minimize to tray</source>
@@ -692,22 +699,6 @@ Additionally, check you are able to %1 the server config file: %2</source>
     <message>
         <source>A new client called &apos;%1&apos; wants to connect</source>
         <translation>새 클라이언트 &apos;%1&apos;이(가) 연결을 요청합니다</translation>
-    </message>
-    <message>
-        <source>%1 Clear Settings</source>
-        <translation>%1 설정 초기화</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;Are you sure you want to clear all settings and restart %1?&lt;/p&gt;&lt;p&gt;This action cannot be undone.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;모든 설정을 초기화하고 %1을(를) 재시작할까요?&lt;/p&gt;&lt;p&gt;이 작업은 번복될 수 없습니다.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>%1 Read-only settings</source>
-        <translation>%1 읽기 전용 설정</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;Settings are read-only because you only have read access to the file:&lt;/p&gt;&lt;p&gt;%1&lt;/p&gt;</source>
-        <translation>&lt;p&gt;다음 파일에 대한 쓰기 권한이 없어 설정이 읽기 전용입니다:&lt;/p&gt;&lt;p&gt;%1&lt;/p&gt;</translation>
     </message>
     <message>
         <source>No thanks</source>
@@ -1057,14 +1048,6 @@ Additionally, check you are able to %1 the server config file: %2</source>
         <translation>지정 시간 내 더블 탭으로 전환(&amp;T)</translation>
     </message>
     <message>
-        <source>Config file</source>
-        <translation>설정 파일</translation>
-    </message>
-    <message>
-        <source>Core server config file</source>
-        <translation>코어 서버 설정 파일</translation>
-    </message>
-    <message>
         <source>Use a server config file to create complex computer layouts that are not possible with the simple grid-based computer layout editor.
 
 Enabling this setting will disable the server config GUI.</source>
@@ -1193,6 +1176,22 @@ Enabling this setting will disable the server config GUI.</source>
         <translation>로그 파일 저장 위치...</translation>
     </message>
     <message>
+        <source>%1 Clear Settings</source>
+        <translation type="unfinished">%1 설정 초기화</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;Are you sure you want to clear all settings and restart %1?&lt;/p&gt; &lt;p&gt;This action cannot be undone.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 Read-only settings</source>
+        <translation type="unfinished">%1 읽기 전용 설정</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;Settings are read-only because you only have read access to the file:&lt;/p&gt;&lt;p&gt;%1&lt;/p&gt;</source>
+        <translation type="unfinished">&lt;p&gt;다음 파일에 대한 쓰기 권한이 없어 설정이 읽기 전용입니다:&lt;/p&gt;&lt;p&gt;%1&lt;/p&gt;</translation>
+    </message>
+    <message>
         <source>Required messages</source>
         <translation>필수 메시지</translation>
     </message>
@@ -1291,6 +1290,10 @@ Enabling this setting will disable the server config GUI.</source>
     <message>
         <source>Using a log level higher than Info may affect performance.</source>
         <translation type="unfinished">Info보다 높은 로그 레벨을 사용하면 성능에 영향을 미칠 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Remove all settings</source>
+        <translation type="unfinished">모든 설정 제거</translation>
     </message>
 </context>
 <context>

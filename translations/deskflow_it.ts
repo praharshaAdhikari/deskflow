@@ -271,6 +271,17 @@ Vuoi connetterti al server?
     </message>
 </context>
 <context>
+    <name>HelpDialog</name>
+    <message>
+        <source>%1 Help</source>
+        <translation type="unfinished">%1 Aiuto</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished">Vicino</translation>
+    </message>
+</context>
+<context>
     <name>HotkeyDialog</name>
     <message>
         <source>Hotkey</source>
@@ -358,14 +369,6 @@ Vuoi connetterti al server?
         <translation>Riavvia</translation>
     </message>
     <message>
-        <source>Clear settings</source>
-        <translation>Cancella impostazioni</translation>
-    </message>
-    <message>
-        <source>Report a Bug</source>
-        <translation>Segnala un Bug</translation>
-    </message>
-    <message>
         <source>&amp;Minimize to tray</source>
         <translation>&amp;Minimizza a icona</translation>
     </message>
@@ -394,6 +397,10 @@ Vuoi connetterti al server?
         <source>About %1...</source>
         <extracomment>%1 will be the replaced with the appname</extracomment>
         <translation>Informazioni su %1...</translation>
+    </message>
+    <message>
+        <source>View &amp;Help</source>
+        <translation type="unfinished">Visualizza la &amp;guida</translation>
     </message>
     <message>
         <source>Ctrl+S</source>
@@ -692,22 +699,6 @@ Inoltre, verifica di poter %1 il file di configurazione del server: %2</translat
     <message>
         <source>A new client called &apos;%1&apos; wants to connect</source>
         <translation>Un nuovo client chiamato &quot;%1&quot; vuole connettersi</translation>
-    </message>
-    <message>
-        <source>%1 Clear Settings</source>
-        <translation>%1 Azzera Impostazioni</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;Are you sure you want to clear all settings and restart %1?&lt;/p&gt;&lt;p&gt;This action cannot be undone.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Sei sicuro di voler azzerare tutte le impostazioni e riavviare %1?&lt;/p&gt;&lt;p&gt;Questa azione non può essere annullata.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>%1 Read-only settings</source>
-        <translation>%1 Impostazioni di sola lettura</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;Settings are read-only because you only have read access to the file:&lt;/p&gt;&lt;p&gt;%1&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Le impostazioni sono di sola lettura perché hai solo accesso in lettura al file:&lt;/p&gt;&lt;p&gt;%1&lt;/p&gt;</translation>
     </message>
     <message>
         <source>No thanks</source>
@@ -1057,14 +1048,6 @@ Inoltre, verifica di poter %1 il file di configurazione del server: %2</translat
         <translation>Passa al doppio &amp;tap entro</translation>
     </message>
     <message>
-        <source>Config file</source>
-        <translation>File di configurazione</translation>
-    </message>
-    <message>
-        <source>Core server config file</source>
-        <translation>File di configurazione principale del server</translation>
-    </message>
-    <message>
         <source>Use a server config file</source>
         <translation>Utilizza un file di configurazione del server</translation>
     </message>
@@ -1167,6 +1150,22 @@ L&apos;abilitazione di questa impostazione disabiliterà l&apos;interfaccia graf
     <message>
         <source>Always run as system (work at login screen and UAC)</source>
         <translation>Esegui sempre come sistema (funziona nella schermata di accesso e UAC)</translation>
+    </message>
+    <message>
+        <source>%1 Clear Settings</source>
+        <translation type="unfinished">%1 Azzera Impostazioni</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;Are you sure you want to clear all settings and restart %1?&lt;/p&gt; &lt;p&gt;This action cannot be undone.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 Read-only settings</source>
+        <translation type="unfinished">%1 Impostazioni di sola lettura</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;Settings are read-only because you only have read access to the file:&lt;/p&gt;&lt;p&gt;%1&lt;/p&gt;</source>
+        <translation type="unfinished">&lt;p&gt;Le impostazioni sono di sola lettura perché hai solo accesso in lettura al file:&lt;/p&gt;&lt;p&gt;%1&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Required messages</source>
@@ -1291,6 +1290,10 @@ L&apos;abilitazione di questa impostazione disabiliterà l&apos;interfaccia graf
     <message>
         <source>Using a log level higher than Info may affect performance.</source>
         <translation type="unfinished">L&apos;utilizzo di un livello di log superiore a Info potrebbe influire sulle prestazioni.</translation>
+    </message>
+    <message>
+        <source>Remove all settings</source>
+        <translation type="unfinished">Rimuovi tutte le impostazioni</translation>
     </message>
 </context>
 <context>

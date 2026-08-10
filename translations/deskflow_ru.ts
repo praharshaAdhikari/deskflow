@@ -271,6 +271,17 @@ Do you want to connect to the server?
     </message>
 </context>
 <context>
+    <name>HelpDialog</name>
+    <message>
+        <source>%1 Help</source>
+        <translation type="unfinished">%1 Справка</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished">Закрывать</translation>
+    </message>
+</context>
+<context>
     <name>HotkeyDialog</name>
     <message>
         <source>Hotkey</source>
@@ -422,6 +433,10 @@ Do you want to connect to the server?
         <translation>&lt;p&gt;Не удалось подключиться к серверу &apos;%1&apos;.&lt;/p&gt;&lt;p&gt;Клиент с таким именем уже подключен к серверу.&lt;/p&gt;Убедитесь, что вы используете уникальное имя и запущен только один процесс клиента.&lt;/p&gt;</translation>
     </message>
     <message>
+        <source>View &amp;Help</source>
+        <translation type="unfinished">Просмотр &amp;справки</translation>
+    </message>
+    <message>
         <source>No IP Detected</source>
         <translation>IP-адрес не обнаружен</translation>
     </message>
@@ -466,14 +481,6 @@ A bound IP is now invalid, you may need to restart the server.</source>
     <message>
         <source>&amp;Help</source>
         <translation>&amp;Справка</translation>
-    </message>
-    <message>
-        <source>Clear settings</source>
-        <translation>Сбросить настройки</translation>
-    </message>
-    <message>
-        <source>Report a Bug</source>
-        <translation>Сообщить об ошибке</translation>
     </message>
     <message>
         <source>&amp;Minimize to tray</source>
@@ -692,22 +699,6 @@ Additionally, check you are able to %1 the server config file: %2</source>
     <message>
         <source>A new client called &apos;%1&apos; wants to connect</source>
         <translation>Новый клиент &apos;%1&apos; хочет подключиться</translation>
-    </message>
-    <message>
-        <source>%1 Clear Settings</source>
-        <translation>%1 Сброс настроек</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;Are you sure you want to clear all settings and restart %1?&lt;/p&gt;&lt;p&gt;This action cannot be undone.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Вы уверены, что хотите сбросить все настройки и перезапустить %1?&lt;/p&gt;&lt;p&gt;Это действие нельзя отменить.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>%1 Read-only settings</source>
-        <translation>%1 Настройки только для чтения</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;Settings are read-only because you only have read access to the file:&lt;/p&gt;&lt;p&gt;%1&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Настройки доступны только для чтения, так как у вас есть доступ только на чтение к файлу:&lt;/p&gt;&lt;p&gt;%1&lt;/p&gt;</translation>
     </message>
     <message>
         <source>No thanks</source>
@@ -1057,14 +1048,6 @@ Additionally, check you are able to %1 the server config file: %2</source>
         <translation>Переключать по двойному &amp;касанию за</translation>
     </message>
     <message>
-        <source>Config file</source>
-        <translation>Файл конфигурации</translation>
-    </message>
-    <message>
-        <source>Core server config file</source>
-        <translation>Файл конфигурации ядра сервера</translation>
-    </message>
-    <message>
         <source>Use a server config file to create complex computer layouts that are not possible with the simple grid-based computer layout editor.
 
 Enabling this setting will disable the server config GUI.</source>
@@ -1191,6 +1174,22 @@ Enabling this setting will disable the server config GUI.</source>
         <translation>Сохранить файл журнала в...</translation>
     </message>
     <message>
+        <source>%1 Clear Settings</source>
+        <translation type="unfinished">%1 Сброс настроек</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;Are you sure you want to clear all settings and restart %1?&lt;/p&gt; &lt;p&gt;This action cannot be undone.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 Read-only settings</source>
+        <translation type="unfinished">%1 Настройки только для чтения</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;Settings are read-only because you only have read access to the file:&lt;/p&gt;&lt;p&gt;%1&lt;/p&gt;</source>
+        <translation type="unfinished">&lt;p&gt;Настройки доступны только для чтения, так как у вас есть доступ только на чтение к файлу:&lt;/p&gt;&lt;p&gt;%1&lt;/p&gt;</translation>
+    </message>
+    <message>
         <source>Required messages</source>
         <translation>Обязательные сообщения</translation>
     </message>
@@ -1289,6 +1288,10 @@ Enabling this setting will disable the server config GUI.</source>
     <message>
         <source>Using a log level higher than Info may affect performance.</source>
         <translation type="unfinished">Использование уровня логирования выше Info может повлиять на производительность.</translation>
+    </message>
+    <message>
+        <source>Remove all settings</source>
+        <translation type="unfinished">Удалить все настройки</translation>
     </message>
 </context>
 <context>

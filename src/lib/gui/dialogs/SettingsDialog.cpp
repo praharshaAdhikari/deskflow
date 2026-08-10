@@ -13,7 +13,6 @@
 
 #include "common/I18N.h"
 #include "common/Settings.h"
-#include "gui/Messages.h"
 #include "gui/TlsUtility.h"
 #include "gui/core/NetworkMonitor.h"
 
@@ -31,6 +30,7 @@ SettingsDialog::SettingsDialog(QWidget *parent, const ServerConfig &serverConfig
 {
 
   ui->setupUi(this);
+  ui->tabWidget->setCurrentIndex(0);
 
   // these are enabled by the control next to them
   ui->lineCommandEnter->setEnabled(false);
@@ -42,6 +42,8 @@ SettingsDialog::SettingsDialog(QWidget *parent, const ServerConfig &serverConfig
   ui->comboLanguage->setCurrentText(I18N::toNativeName(I18N::currentLanguage()));
 
   updateText();
+
+  ui->btnClearAllSettings->setIcon(QIcon::fromTheme(QStringLiteral("edit-clear-all")));
 
   ui->comboTlsKeyLength->setItemIcon(0, QIcon::fromTheme(QStringLiteral("security-medium")));
   ui->comboTlsKeyLength->setItemIcon(1, QIcon::fromTheme(QIcon::ThemeIcon::SecurityHigh));
@@ -106,6 +108,7 @@ void SettingsDialog::initConnections() const
 
   connect(ui->groupSecurity, &QGroupBox::toggled, this, &SettingsDialog::updateTlsControlsEnabled);
   connect(ui->groupService, &QGroupBox::toggled, this, &SettingsDialog::updateControls);
+  connect(ui->btnClearAllSettings, &QPushButton::clicked, this, &SettingsDialog::resetAllSettings);
   connect(ui->btnTlsRegenCert, &QPushButton::clicked, this, &SettingsDialog::regenCertificates);
   connect(ui->comboTlsKeyLength, &QComboBox::currentIndexChanged, this, &SettingsDialog::updateRequestedKeySize);
   connect(ui->btnTlsCertPath, &QPushButton::clicked, this, &SettingsDialog::browseCertificatePath);
@@ -195,7 +198,22 @@ void SettingsDialog::showReadOnlyMessage()
 {
   if (Settings::isWritable())
     return;
-  messages::showReadOnlySettings(this, Settings::settingsFile());
+  QMessageBox::information(
+      this, tr("%1 Read-only settings").arg(kAppName),
+      tr("<p>Settings are read-only because you only have read access to the file:</p><p>%1</p>")
+          .arg(QDir::toNativeSeparators(Settings::settingsFile()))
+  );
+}
+
+void SettingsDialog::resetAllSettings()
+{
+  auto result = QMessageBox::question(
+      this, tr("%1 Clear Settings").arg(kAppName),
+      tr("<p>Are you sure you want to clear all settings and restart %1?</p> <p>This action cannot be undone.</p>")
+          .arg(kAppName)
+  );
+  if (result == QMessageBox::Yes)
+    Q_EMIT requestRemoveAllSettings();
 }
 
 void SettingsDialog::updateText()
@@ -351,7 +369,8 @@ bool SettingsDialog::isClientMode() const
 void SettingsDialog::updateKeyLengthOnFile(const QString &path)
 {
   if (!QFile(path).exists()) {
-    qFatal("tls certificate file not found: %s", qUtf8Printable(path));
+    qCritical("tls certificate file not found: %s", qUtf8Printable(path));
+    return;
   }
 
   auto length = TlsUtility::getCertKeyLength(path);

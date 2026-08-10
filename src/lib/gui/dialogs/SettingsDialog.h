@@ -26,6 +26,7 @@ public:
 
 Q_SIGNALS:
   void shown();
+  void requestRemoveAllSettings();
 
 protected:
   void changeEvent(QEvent *e) override;
@@ -42,6 +43,7 @@ private:
   void updateTlsControls();
   void updateTlsControlsEnabled();
   void showReadOnlyMessage();
+  void resetAllSettings();
   void updateText();
 
   /// @brief Load all settings.
